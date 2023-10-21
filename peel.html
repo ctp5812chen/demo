@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="utf-8">
+  <title>讀取 CSV 檔</title>
+</head>
+<body>
+  <h1>讀取 CSV 檔</h1>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      // 讀取 CSV 檔
+      $.get("data.csv", function(data) {
+        // 將 CSV 資料轉換成陣列
+        var dataArray = data.split("\n");
+        // 建立表格
+        var table = "<table>";
+        for (var i = 0; i < dataArray.length; i++) {
+          // 建立表格列
+          var row = "<tr>";
+          var data = dataArray[i].split(",");
+          for (var j = 0; j < data.length; j++) {
+            // 建立表格單元格
+            row += "<td>" + data[j] + "</td>";
+          }
+          row += "</tr>";
+          table += row;
+        }
+        table += "</table>";
+        // 顯示表格
+        $("body").append(table);
+      });
+    });
+  </script>
+</body>
+</html>
