@@ -22,3 +22,11 @@ h1{
         font-size: 20px;
         text-align: left;
     }
+    #mytable td{
+        padding: 8px;
+    }
+    #mytable tr:hover{
+        background-color: ivory;
+        color: blueviolet;
+        transition: .8s;
+    }
