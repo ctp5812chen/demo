@@ -5,7 +5,7 @@ h1{
 .seach{
     text-align: center;
 }
-#filter{
+#myInput{
     width: 80%;
     font-size: 20px;
     padding: 10px;
