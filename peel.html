@@ -29,6 +29,14 @@
         table += "</table>";
         // 顯示表格
         $("body").append(table);
+        
+        // 建立篩選器
+    var filter = $("#filter").val();
+
+        // 篩選表格
+        $(table).filter(function() {
+          return $(this).find("td:eq(0)").text() == filter;
+        });
       });
     });
   </script>
