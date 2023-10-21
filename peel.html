@@ -35,14 +35,13 @@
         $("body").append(table);
       });
     });
-  </script>
+  
 
-  <script>
     $(document).ready(function(){
       $("#myInput").on("keyup", function(){
         var value=$(this).val().toLowerCase();
       
-        $("#mytable td").filter(function(){
+        $("#mytable tr").filter(function(){
           $(this).toggle($(this).text().toLowerCase().indexof(value) >-1)
         });
       });
