@@ -5,8 +5,8 @@
   <title>剝  藥  區</title>
 </head>
 <body>
-  <h1>讀取 CSV 檔</h1>
-  <input type="submit" id="filter" placeholder="輸入篩選條件">
+  <h1>剝藥責任區</h1>
+  <input type="text" id="filter" placeholder="輸入篩選條件">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(function() {
@@ -31,15 +31,26 @@
         // 顯示表格
         $("body").append(table);
         
-        // 建立篩選器
-        var filter = $("#filter").val();
+        // // 建立篩選器
+        // var filter = $("#filter").val();
 
-        // 篩選表格
-        $(table).filter(function() {
-          return $(this).find("td:eq(0)").text() == filter;
-        });
+        // // 篩選表格
+        // $(table).filter(function() {
+        //   return $(this).find("td:eq(0)").text() == filter;
+        // });
       });
     });
   </script>
 </body>
+<script>
+$(function() {
+  // 建立篩選器
+  var filter = $("#filter").val();
+
+  // 篩選表格
+  $(table).filter(function() {
+    return $(this).find("td:eq(0)").text() == filter;
+  });
+});
+</script>
 </html>
