@@ -42,7 +42,7 @@
       $("#myInput").on("keyup", function(){
         var value=$(this).val().toLowerCase();
       
-        $("#mytable").filter(function(){
+        $("#mytable td").filter(function(){
           $(this).toggle($(this).text().toLowerCase().indexof(value) >-1)
         });
       });
