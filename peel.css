@@ -1,6 +1,10 @@
 h1{
     text-align: center;
 }
+
+.seach{
+    text-align: center;
+}
 #filter{
     width: 80%;
     font-size: 20px;
@@ -9,3 +13,12 @@ h1{
     border: 1px solid blue;
     margin-bottom: 12px;
 }
+    #mytable{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: left;
+    }
