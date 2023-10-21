@@ -48,21 +48,12 @@
 <script>
   $(document).ready(function(){
     $("#filter").on("keyup", function(){
-      var value=$(this).val()
+      var value=$(this).val();
     
-    $("#mytable tr").filter(function(){
-      $(this).toggle($(this).text().indexof(value) >-1)
-    });
+      $("#mytable tr").filter(function(){
+        $(this).toggle($(this).text().indexof(value) >-1)
+      });
     });
   });
-                        // $(function() {
-                        //   // 建立篩選器
-                        //   var filter = $().val();
-
-                        //   // 篩選表格
-                        //   $(table).filter(function() {
-                        //     return $(this).find("td:eq(0)").text() == filter;
-                        //   });
-                        // });
 </script>
 </html>
