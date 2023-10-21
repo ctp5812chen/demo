@@ -6,6 +6,7 @@
 </head>
 <body>
   <h1>讀取 CSV 檔</h1>
+  <input type="text" id="filter" placeholder="輸入篩選條件">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(function() {
@@ -31,11 +32,11 @@
         $("body").append(table);
         
         // 建立篩選器
-    var filter = $("#filter").val();
+        var filter = $("#filter").val();
 
         // 篩選表格
         $(table).filter(function() {
-          return $(this).find("td:eq(2)").text() == "芷瑄";
+          return $(this).find("td:eq(0)").text() == filter;
         });
       });
     });
