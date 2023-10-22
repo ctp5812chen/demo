@@ -2,18 +2,18 @@
 <html lang="zh-tw">
 <head>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="peel.css">
   <title>剝  藥  區</title>
 </head>
 <body>
-  <h1>剝藥責任區</h1>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="peel.css">
+  <h1>剝藥責任區</h1>  
   <form action="" class="search">
     <p id="inBlock">請輸入您負責區代號： <input type="text" id="myInput" placeholder="輸入篩選條件"></p>
     <span style="color: #ff0000;">連線有次數上，當無法請等待再試。</span>
   </form>
   <script>
-    $(function() {
+    $(document).ready(function() {
     // 讀取 CSV 檔
     $.get("data.csv", function(data) {
         // 將 CSV 檔的資料分成陣列
@@ -45,7 +45,8 @@
                 td.textContent = cell;
                 tr.appendChild(td);
         }
-        table.appendChild(tr);
+        tbody.appendChild(tr);
+        table.appendChild(tbody);
     }
 
     // 將表格新增到 HTML 元素中
