@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="peel.css">
   <form action="" class="search">
-    <input type="text" id="myInput" placeholder="輸入篩選條件">
+    <p id="inBlock">請輸入您負責區代號： <input type="text" id="myInput" placeholder="輸入篩選條件"></p>
   </form>
   <script>
     $(function() {
@@ -35,8 +35,9 @@
         $("body").append(table);
       });
     });
-  
+  </script>
 
+  <script>
     $(document).ready(function(){
       $("#myInput").on("keyup", function(){
         var value=$(this).val().toLowerCase();
