@@ -21,6 +21,7 @@
 
         // 建立 HTML 表格
         const table = document.createElement("table");
+        table.setAttribute("id", "mytable");
 
         // 建立表格標題列
         const thead = document.createElement("thead");
@@ -34,6 +35,8 @@
         table.appendChild(thead);
 
         // 建立表格資料列
+        const tbody = document.createElement("tbody");
+        tbody.setAttribute("id", "mytbody");
         for (let i = 1; i < rows.length; i++) {
             const tr = document.createElement("tr");
             for (const cell of rows[i].split(",")) {
