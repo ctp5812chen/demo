@@ -7,7 +7,7 @@ h1{
 }
 #inBlock{
     font-size: 40px;
-    color: red;
+    color: rgba(5, 145, 233, 0.919);
 }
 #myInput{
     width: 80%;
