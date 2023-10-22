@@ -21,16 +21,17 @@ h1{
         text-align: center;
         color: blue;
         font-style: oblique;
+        font-weight: bold;
     }
-    #mytbody{
-        display: block !important;
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-        border: 1px solid grey !important;
-        font-size: 18px !important;
-        text-align: left;
-    }
+#mytable{
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    border: 1px solid grey !important;
+    font-size: 18px;
+    text-align: left;
+}
 
     #mytable td{
         padding: 8px;
