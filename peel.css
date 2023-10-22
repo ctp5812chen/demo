@@ -23,7 +23,7 @@ h1{
         font-style: oblique;
     }
 #mytable{
-    display: block;
+    display: block !important;
     margin-left: auto;
     margin-right: auto;
     width: auto;
