@@ -35,7 +35,7 @@
 
         // 建立表格資料列
         for (let i = 1; i < rows.length; i++) {
-            const tr = document.createElement("tbody tr");
+            const tr = document.createElement("tr");
             for (const cell of rows[i].split(",")) {
                 const td = document.createElement("td");
                 td.textContent = cell;
