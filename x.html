@@ -25,6 +25,7 @@
 
         // 建立表格標題列
         const thead = document.createElement("thead");
+        thead.setAttribute("id", "mythead");
         const tr = document.createElement("tr");
         for (const header of rows[0].split(",")) {
             const th = document.createElement("th");
@@ -57,7 +58,7 @@
       $("#myInput").on("keyup", function(){
         var value=$(this).val().toLowerCase();
       
-        $("#mytable tr").filter(function(){
+        $("#mytbody tr").filter(function(){
           $(this).toggle($(this).text().toLowerCase().indexof(value) >-1)
         });
       });

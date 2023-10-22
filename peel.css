@@ -26,6 +26,9 @@ h1{
         font-size: 18px;
         text-align: left;
     }
+    #myhead{
+        text-align: center;
+    }
     #mytable td{
         padding: 8px;
     }
