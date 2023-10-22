@@ -20,14 +20,13 @@
         var dataArray = data.split("\n");
         // 建立表格        
         var table = "<table id='mytable' border='1px solid black'>";
-        var h = 0;
-            var r = "<tr>";
-            var d = dataArray[h].split(",");
-            for (var j = 0; j < data.length; j++) {
+            var d = dataArray[0].split(",");            
+            for (var j = 0; j < d.length; j++) {
+            <tr>    
             // 建立表格單元格
             row += "<th>" + data[j] + "</th>";
-          }
-          row += "</tr>";
+            </tr>
+          }        
         for (var i = 1; i < dataArray.length; i++) {
           // 建立表格列
           var row = "<tr>";
