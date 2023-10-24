@@ -10,7 +10,7 @@
   <h1>剝藥責任區</h1>  
   <form action="" class="search">
     <p id="inBlock">請輸入您負責區代號： <input type="text" id="myInput" placeholder="輸入篩選條件"></p>
-    <span style="color: #ff0000;">連線有次數上，當無法請等待再試。</span>
+    <strong style="color: #ff0000;">連線有次數上，當無法請等待再試。</strong>
   </form>
   <script>
     $(document).ready(function() {
@@ -20,7 +20,7 @@
         const rows = data.split("\n");
 
         // 建立 HTML 表格
-        const table = document.createElement("table");
+        const table = document.createElement("table border='1'");
         table.setAttribute("id", "mytable");
 
         // 建立表格標題列
@@ -64,6 +64,13 @@
         });
       });
     });
-  </script>  
+  </script> 
+  <!-- <hr> -->
+  <footer>
+    <span style="text-align: 65%; color: rgb(2, 47, 130); font-weight: bolder;">
+      資料更新日期: <mark>2023/20/20</mark>
+    </span>
+  </footer> 
 </body>
 </html>
+ 
