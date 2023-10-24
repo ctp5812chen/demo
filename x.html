@@ -10,7 +10,7 @@
   <h1>剝藥責任區</h1>  
   <form action="" class="search">
     <p id="inBlock">請輸入您負責區代號： <input type="text" id="myInput" placeholder="輸入篩選條件"></p>
-    <strong style="color: #ff0000;">連線有次數上，當無法請等待再試。</strong>
+    <strong style="color: #ff0000;">連線有次數上限，無法連線請等待再試。</strong>
   </form>
   <script>
     $(document).ready(function() {
@@ -64,7 +64,10 @@
         });
       });
     });
-  </script> 
+  </script>
+  <noscript>
+    <p style="color: #ff0000;">No Script can apply!</Script></p>
+  </noscript> 
   <!-- <hr> -->
   <footer>
     <span style="text-align: 65%; color: rgb(2, 47, 130); font-weight: bolder;">
