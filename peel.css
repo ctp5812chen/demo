@@ -17,11 +17,7 @@ h1{
     border: 1px solid blue;
     margin-bottom: 12px;
 }
-    #mythead{
-        text-align: center;
-        color: blue;
-        font-weight: bold;
-    }
+    
 #mytable{
     display: block !important;
     margin-left: auto;
@@ -39,6 +35,11 @@ h1{
         background-color: ivory;
         color: blueviolet;
         transition: .8s;
+    }
+    #mythead{
+        text-align: center;
+        color: blue;
+        font-weight: bold;
     }
 
 #zone{

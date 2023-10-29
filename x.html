@@ -2,28 +2,32 @@
 <html lang="zh-tw">
 <head>
   <meta charset="utf-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="peel.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+          crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="peel.css">
   <title>剝  藥  區</title>
 </head>
 <body>
-  <h1>剝藥責任區</h1>  
+  <h1 style="color: blanchedalmond;     background-color: darkblue;     text-align: center;">剝藥責任區
+  </h1>  
   <form action="" class="search">
-    <p id="inBlock">請輸入您負責區代號： <input type="text" id="myInput" placeholder="輸入篩選條件"></p>
+    <p id="inBlock">請輸入您負責區代號： <input type="text" id="myInput" placeholder="輸入您負責區代號"></p>
     <strong style="color: #ff0000;">連線有次數上限，無法連線請等待再試。</strong>
   </form>
   <div>
-    <table border="1" class="dataframe">
-      <thead>
+    <table border="1" class="dataframe" id="mytable">
+      <thead id="mythead">
         <tr style="text-align: right;">
-          <th>藥盒M</th>
+          <th>機號-藥盒</th>
           <th>藥名</th>
           <th>代號</th>
           <th>耗量</th>
           <th>負責人</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="mytbody">
         <tr>
           <td>M1- 2</td>
           <td>藍Abilify 5mg Tab#</td>
@@ -2337,6 +2341,16 @@
       </tbody>
     </table>
   </div>
+  <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function(){
+        var value=$(this).val().toLowerCase();
+        $("#mytbody tr").filter(function(){
+          $(this).toggle($(this).children().eq(2).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+  </script>
   <footer>
     <span style="text-align: 65%; color: rgb(2, 47, 130); font-weight: bolder;">
       資料更新日期: <mark>2023/20/20</mark>
