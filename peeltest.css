@@ -1,0 +1,53 @@
+h1{
+    text-align: center;
+}
+
+.seach{
+    text-align: center;
+}
+#inBlock{
+    font-size: 40px;
+    color: rgba(5, 145, 233, 0.919);
+}
+#myInput{
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    background-color: antiquewhite;
+    border: 1px solid blue;
+    margin-bottom: 12px;
+}
+    
+#mytable{
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    border: 1px solid grey !important;
+    font-size: 18px;
+    text-align: left;
+}
+
+    #mytable td{
+        padding: 8px;
+    }
+    #mytable tr:hover{
+        background-color: ivory;
+        color: blueviolet;
+        transition: .8s;
+    }
+    #mythead{
+        text-align: center;
+        color: blue;
+        font-weight: bold;
+    }
+
+#zone{
+    font-size: 40px;
+    color: brown;
+}
+#btnon, #btnoff{
+    font-size: 24px;
+    color: purple;
+    background-color: aqua;
+}
