@@ -40,3 +40,13 @@ h1{
         color: blueviolet;
         transition: .8s;
     }
+
+#zone{
+    font-size: 40px;
+    color: brown;
+}
+#btnon, #btnoff{
+    font-size: 24px;
+    color: purple;
+    background-color: aqua;
+}

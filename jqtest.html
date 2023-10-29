@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Test</title>
+    <script 
+    src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="peel.css">  
+</head>
+<body>
+  <form action="" class="search">
+    <p id="inBlock">請輸入您負責區代號： <input type="text" id="myInput" placeholder="輸入篩選條件"></p>
+    <span style="color: #ff0000;">連線有次數上限，若無法請等待再試。</span>
+  </form>
+  <script>
+    $(document).ready(function() {
+    // 讀取 CSV 檔
+    $.get("data.csv", function(data) {
+        // 將 CSV 檔的資料分成陣列
+        // const rows = data.split("\n");
+
+        // 建立 HTML 表格
+        // const table = document.createElement("table");
+
+        // // 建立表格標題列
+        // const thead = document.createElement("thead");
+        // const tr = document.createElement("tr");
+        // for (const header of rows[0].split(",")) {
+        //     const th = document.createElement("th");
+        //     th.textContent = header;
+        //     tr.appendChild(th);
+        // }
+        // thead.appendChild(tr);
+        // table.appendChild(thead);
+
+        // 建立表格資料列
+    //     const tbody = document.createElement("tbody");
+    //     tbody.setAttribute("id", "mytbody");
+    //     for (let i = 1; i < rows.length; i++) {
+    //         const tr = document.createElement("tr");
+    //         for (const cell of rows[i].split(",")) {
+    //             const td = document.createElement("td");
+    //             td.textContent = cell;
+    //             tr.appendChild(td);
+    //     }
+    //     tbody.appendChild(tr);
+    //     table.appendChild(tbody);
+    // }
+
+    // 將表格新增到 HTML 元素中
+    // document.body.appendChild(table);
+        });
+    });
+  </script> 
+</body>
+</html>
