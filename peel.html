@@ -8,10 +8,13 @@
   </script>
   <link rel="stylesheet" href="peel.css">
   <style>
-    @media (max-width:600px){
+    @media (max-width:300px){
       #mytable{
         width: 100%;
         height: 150px;
+      }
+      h1{
+        width: 100%;
       }
     }
   </style>
@@ -22,11 +25,18 @@
   </h1>  
   <form action="" class="search">
     <p id="inBlock">請輸入您負責區代號： <input type="text" id="myInput" placeholder="輸入您負責區代號"></p>
-    <strong style="color: #ff0000;">連線有次數上限，無法連線請等待再試。</strong>
+    <strong style="color: #ff0000;">勿按enter，僅模糊搜尋，<br>連線有次數上限，無法連線請等待再試。</strong>
   </form>
-  <div>
+  <script>
+    $(document).ready(function(){
+      $.get("data.txt", function(data){
+          $("#content").text(data);
+        });
+      });
+  </script>
+  <div id="content">
     <table border="1" class="dataframe" id="mytable">
-      <thead id="mythead">
+      <!-- <thead id="mythead">
         <tr style="text-align: right;">
           <th>機號-藥盒</th>
           <th>藥名</th>
@@ -2346,7 +2356,7 @@
           <td>337.0</td>
           <td>琇惠</td>
         </tr>
-      </tbody>
+      </tbody> -->
     </table>
   </div>
   <script>

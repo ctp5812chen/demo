@@ -2,18 +2,19 @@ h1{
     text-align: center;
 }
 
-.seach{
-    text-align: center;
+.search{
+    text-align: left;
 }
 #inBlock{
-    font-size: 40px;
+    font-size: 30px;
     color: rgba(5, 145, 233, 0.919);
+    font-family: 'Times New Roman', Times, serif;
 }
 #myInput{
-    width: 80%;
+    width: 300px;
     font-size: 20px;
-    padding: 10px;
-    background-color: antiquewhite;
+    padding: 20px;
+    background-color: rgb(229, 205, 173);
     border: 1px solid blue;
     margin-bottom: 12px;
 }
@@ -41,6 +42,8 @@ h1{
         color: blue;
         font-weight: bold;
     }
+
+
 
 #zone{
     font-size: 40px;
