@@ -1,48 +1,80 @@
+body{
+    background-color: rgb(204, 244, 204);
+}
 h1{
     text-align: center;
+    font-size: 45px;
+    letter-spacing: 25px;
+    height: 60px;
+    padding: 8px;
+    font-family: 'DFKai-sb', 'Microsoft JhengHei', 'Times New Roman', Times, sans-serif, serif;
 }
 
 .search{
     text-align: left;
 }
 #inBlock{
-    font-size: 30px;
-    color: rgba(5, 145, 233, 0.919);
+    font-size: 34px;
+    color: blue;
+    font-weight: 350%;
     font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
 }
 #myInput{
-    width: 300px;
-    font-size: 20px;
-    padding: 20px;
-    background-color: rgb(229, 205, 173);
+    position: relative;
+    top: 1px;
+    width: 20%;
+    height: 30px;
+    font-family: serif, sans-serif,;
+    font-size: 28px;
+    padding: 10px;
+    background-color:cornflowerblue;
     border: 1px solid blue;
-    margin-bottom: 12px;
+    margin-bottom: 1px;
+    padding-left: 1px;
 }
-    
+#emphasize{
+    position: absolute ;
+    top: 165px;
+    left: 3%;
+    color: red;
+    /* padding-left: 50px; */
+}
+
+div{
+    /* max-height: 600px;
+    overflow: auto; */
+}
 #mytable{
-    display: block !important;
-    margin-left: auto;
+    width: 65%;    
+    /* display: block !important; */
+    margin-left: 20px;
     margin-right: auto;
-    width: auto;
     border: 1px solid grey !important;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
 }
 
     #mytable td{
-        padding: 8px;
+        padding: 3px;
     }
     #mytable tr:hover{
         background-color: ivory;
         color: blueviolet;
+        font-weight: bolder;
         transition: .8s;
     }
     #mythead{
         text-align: center;
+        font-size: 22px;
+        font-family: 'DFKai-sb', sans-serif, serif;
         color: blue;
-        font-weight: bold;
+        font-weight: bolder;
+        background-color: darkseagreen;
     }
-
+tbody td{
+    text-align: justify;
+}
 
 
 #zone{

@@ -17,6 +17,15 @@
         width: 100%;
       }
     }
+    @media (max-width:150px){
+      #mytable{
+        width: 100%;
+        height: 70px;
+      }
+      h1{
+        width: 100%;
+      }
+    }
   </style>
   <title>剝  藥  區</title>
 </head>
@@ -25,7 +34,11 @@
   </h1>  
   <form action="" class="search">
     <p id="inBlock">請輸入您負責區代號： <input type="text" id="myInput" placeholder="輸入您負責區代號"></p>
-    <strong style="color: #ff0000;">勿按enter，僅模糊搜尋，<br>連線有次數上限，無法連線請等待再試。</strong>
+    <p id="emphasize">
+          <strong style="font-size: 135%;">請勿按enter</strong>
+          ，僅提供模糊搜尋，
+          <br>連線有次數上限，無法連線請稍待再試。
+    </p>
   </form>
   <script>
     $(document).ready(function(){
@@ -34,16 +47,18 @@
         });
       });
   </script>
+  <p style="text-align: end; font-size: 28px; color: chocolate; font-weight: bolder;">
+    資料更新日期： 2023/11/01
+  </p>
   <div>
     <table border="1" class="dataframe" id="mytable">
-      <div id="content"></div>
-      <!-- <thead id="mythead">
-        <tr style="text-align: right;">
-          <th>機號-藥盒</th>
-          <th>藥名</th>
-          <th>代號</th>
-          <th>耗量</th>
-          <th>負責人</th>
+      <thead id="mythead">
+        <tr style="text-align: center; height: 55px;">
+          <th style="width: 20%;">機號-藥盒</th>
+          <th style="width: 40%;">藥名</th>
+          <th style="width: 10%;">代號</th>
+          <th style="width: 15%;">耗量</th>
+          <th style="width: 15%;">負責人</th>
         </tr>
       </thead>
       <tbody id="mytbody">
@@ -2357,7 +2372,7 @@
           <td>337.0</td>
           <td>琇惠</td>
         </tr>
-      </tbody> -->
+      </tbody>
     </table>
   </div>
   <script>
@@ -2372,7 +2387,7 @@
   </script>
   <footer>
     <span style="text-align: 65%; color: rgb(2, 47, 130); font-weight: bolder;">
-      資料更新日期: <mark>2023/10/XX</mark>
+      <mark>版本更新日期: Ver_01 Oct. 2023</mark>
     </span>
   </footer> 
 </body>
