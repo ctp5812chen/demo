@@ -1,5 +1,6 @@
 body{
     background-color: rgb(204, 244, 204);
+    /* background-image: url(bkimg.jpg); */
 }
 h1{
     text-align: center;
@@ -26,16 +27,17 @@ h1{
     width: 20%;
     height: 30px;
     font-family: serif, sans-serif,;
+    color: azure;
     font-size: 28px;
     padding: 10px;
     background-color:cornflowerblue;
-    border: 1px solid blue;
+    border: 2px solid blue;
     margin-bottom: 1px;
     padding-left: 1px;
 }
 #emphasize{
     position: absolute ;
-    top: 165px;
+    top: 170px;
     left: 3%;
     color: red;
     /* padding-left: 50px; */
@@ -53,6 +55,8 @@ div{
     border: 1px solid grey !important;
     font-size: 16px;
     text-align: left;
+    position: relative;
+    left:30px;
 }
 
     #mytable td{
@@ -74,6 +78,13 @@ div{
     }
 tbody td{
     text-align: justify;
+}
+footer{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 5%;
 }
 
 
