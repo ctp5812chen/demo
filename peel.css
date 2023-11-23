@@ -22,10 +22,10 @@ h1{
     letter-spacing: 5px;
 }
 #myInput{
-    position: relative;
-    top: 1px;
-    width: 40%;
-    height: 30px;
+    position: absolute;
+    top: 135px;
+    /* width: 40%; */
+    /* height: 30px; */
     font-family: serif, sans-serif,;
     color: azure;
     font-size: 85%;
