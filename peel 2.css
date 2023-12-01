@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(204, 244, 204);
+    /* background-image: url(bkimg.jpg); */
+}
+h1{
+    text-align: center;
+    font-size: 325%;
+    letter-spacing: 25px;
+    height: 60px;
+    padding: 8px;
+    font-family: 'DFKai-sb', 'Microsoft JhengHei', 'Times New Roman', Times, sans-serif, serif;
+}
+
+.search{
+    text-align: left;
+}
+#inBlock{
+    font-size: 200%;
+    color: blue;
+    font-weight: 350%;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+}
+#myInput{
+    position: absolute;
+    top: 135px;
+    /* width: 40%; */
+    /* height: 30px; */
+    font-family: serif, sans-serif,;
+    color: azure;
+    font-size: 85%;
+    padding: 10px;
+    background-color:cornflowerblue;
+    border: 2px solid blue;
+    margin-bottom: 1px;
+    padding-left: 1px;
+}
+#emphasize{
+    position: absolute ;
+    top: 170px;
+    left: 3%;
+    color: red;
+    /* padding-left: 50px; */
+}
+
+div{
+    /* max-height: 600px;
+    overflow: auto; */
+}
+#mytable{
+    width: 65%;    
+    /* display: block !important; */
+    margin-left: 20px;
+    margin-right: auto;
+    border: 1px solid grey !important;
+    font-size: 16px;
+    text-align: left;
+    position: relative;
+    left:30px;
+}
+
+    #mytable td{
+        padding: 3px;
+    }
+    #mytable tr:hover{
+        background-color: ivory;
+        color: blueviolet;
+        font-weight: bolder;
+        transition: .8s;
+    }
+    #mythead{
+        text-align: center;
+        font-size: 22px;
+        font-family: 'DFKai-sb', sans-serif, serif;
+        color: blue;
+        font-weight: bolder;
+        background-color: darkseagreen;
+    }
+tbody td{
+    text-align: justify;
+}
+footer{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+#zone{
+    font-size: 40px;
+    color: brown;
+}
+#btnon, #btnoff{
+    font-size: 24px;
+    color: purple;
+    background-color: aqua;
+}

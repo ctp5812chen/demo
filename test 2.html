@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成一個表格</title>
+    <script 
+    src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="peel.css"> 
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+          // 讀取 CSV 檔案
+          $.get("data.csv", function(data) {
+            // 解析 CSV 檔案
+            var rows = data.split("\n");
+            var dataArray = [];
+            for (var i = 0; i < rows.length; i++) {
+              var row = rows[i].split(",");
+              dataArray.push({
+                name: row[0],
+                age: row[1],
+                address: row[2],
+                note: row[3]
+              });
+            }
+    
+            // 顯示 CSV 檔案的內容
+            for (var i = 0; i < dataArray.length; i++) {
+              var item = dataArray[i];
+              $("ul").append("<li>" + item.name + " - " + item.age + " - " + item.address + " - " + item.note + "</li>");
+            }
+          });
+        });
+      </script>
+      <ul></ul>
+</body>
+</html>
