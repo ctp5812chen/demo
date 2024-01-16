@@ -38,6 +38,12 @@ h1{
     color: red;
     /* padding-left: 50px; */
 }
+#renew{
+    position: absolute ;
+    left: 55px;
+    font-size: 16px;
+    color: red;
+}
 
 div{
     /* max-height: 600px;
